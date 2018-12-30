@@ -9,11 +9,19 @@
 
 <h2>How to Run</h2>
 
-Set up your grid with the following parameters in an html file:
+Set up your grid in an html file:
 ```
 <canvas id="myGrid" 
 width="300" height="300" 
 style="border:1px 
 solid #A9A9A9;">
 </canvas>
+```
+
+Set up parameters:
+```
+var gridRow = 300;
+var gridColumn = 300;
+var theGrid = createArray(gridColumn);
+var newGrid = createArray(gridColumn);
 ```
