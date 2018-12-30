@@ -4,6 +4,7 @@
 <h2>What is Game of Life?</h2>
 <p>Read about it here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</p>
 
-<p>Check it out online at https://jsbin.com/zadizaf/13</p>
+<h2>Demo</h2>
+<p>Check it out online at https://jsbin.com/zadizaf</p>
 
-<script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script>
+<a class="jsbin-embed" href="https://jsbin.com/zadizaf/embed">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script>

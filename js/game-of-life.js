@@ -1,3 +1,7 @@
+// Conway's game of life
+// The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced players, by creating patterns with particular properties.
+
+// grid
 var gridRow = 300;
 var gridColumn = 300;
 var theGrid = createArray(gridColumn);
@@ -74,7 +78,7 @@ function updateGrid() { // updates to new state of grid
                         newGrid[r][c] = 0; // Otherwise it stays dead
                 }
             } else if (theGrid[r][c] === 1) { // Living cell rules
-                switch (totalCells) {
+                switch (countCells) {
                     case 0:
                     case 1:
                         newGrid[r][c] = 0; // Fewer than 2 surrounding cells, dies of underpopulation
