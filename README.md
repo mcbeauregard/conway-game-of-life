@@ -6,3 +6,14 @@
 
 <h2>Demo</h2>
 <p>Check it out online at https://jsbin.com/zadizaf</p>
+
+<h2>How to Run</h2>
+
+Set up your grid with the following parameters in an html file:
+```
+<canvas id="myGrid" 
+width="300" height="300" 
+style="border:1px 
+solid #A9A9A9;">
+</canvas>
+```
