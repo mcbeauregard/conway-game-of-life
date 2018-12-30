@@ -89,3 +89,61 @@ function updateGrid() {
         for (var c = 1; c < gridColumn - 1; c++) { 
             var countCells = 0;
 ```
+
+Count surrounding cells:
+```
+ countCells += theGrid[r - 1][c - 1]; //count top left
+            countCells += theGrid[r - 1][c]; //count top center
+            countCells += theGrid[r - 1][c + 1]; //count top right
+            countCells += theGrid[r][c - 1]; //count center left
+            countCells += theGrid[r][c + 1]; //count center right
+            countCells += theGrid[r + 1][c - 1]; //count bottom left
+            countCells += theGrid[r + 1][c]; //count bottom center
+            countCells += theGrid[r + 1][c + 1]; //count bottom right
+            
+ if (theGrid[r][c] === 0) { 
+                switch (countCells) {
+                    case 3:
+                        newGrid[r][c] = 1; // Dead cell rules: any dead cell with exactly three live surrounding cells becomes a live cell
+                        break;
+                    default:
+                        newGrid[r][c] = 0; // Otherwise it stays dead
+                }
+            } else if (theGrid[r][c] === 1) { // Living cell rules
+                switch (countCells) {
+                    case 0:
+                    case 1:
+                        newGrid[r][c] = 0; // Fewer than 2 surrounding cells, dies of underpopulation
+                        break;
+                    case 2:
+                    case 3:
+                        newGrid[r][c] = 1; // Cells with 2 or 3 surrounding cells, lives on 
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        newGrid[r][c] = 0; // Live cell with > 3 surrounding cells, dies of overpopulation
+                        break;
+                    default:
+                        newGrid[r][c] = 0; //
+          
+                }
+
+            }
+        }
+    }
+```
+
+```
+for (var r = 0; r < gridRow; r++) { 
+        for (var c = 0; c < gridColumn; c++) { 
+            theGrid[r][c] = newGrid[r][c];
+
+        }
+    }
+
+
+}
+```
