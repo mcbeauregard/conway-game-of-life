@@ -5,7 +5,7 @@
 <p>Read about it here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</p>
 
 <h2>Demo</h2>
-<p>Check it out online at https://jsbin.com/zadizaf</p>
+<p>Check it out online at: https://jsbin.com/zadizaf</p>
 
 <h2>How to Run</h2>
 
