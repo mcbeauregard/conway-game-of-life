@@ -136,6 +136,7 @@ Count surrounding cells:
     }
 ```
 
+Create a function that copies the new grid to the old grid, by iterating through rows and columns:
 ```
 for (var r = 0; r < gridRow; r++) { 
         for (var c = 0; c < gridColumn; c++) { 
