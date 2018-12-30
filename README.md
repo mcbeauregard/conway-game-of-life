@@ -6,5 +6,3 @@
 
 <h2>Demo</h2>
 <p>Check it out online at https://jsbin.com/zadizaf</p>
-
-<a class="jsbin-embed" href="https://jsbin.com/zadizaf/embed">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script>
